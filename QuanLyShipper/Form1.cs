@@ -124,7 +124,7 @@ namespace QuanLyShipper
                 {
                     //Đóng form đăng nhập
                     this.Hide();
-                    MessageBox.Show("đăng nhập thành công");
+                    
 
                     //Mở form chính
                     frm_KhachHang mainForm = new frm_KhachHang();
