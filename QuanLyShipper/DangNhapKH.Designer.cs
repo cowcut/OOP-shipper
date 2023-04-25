@@ -59,6 +59,7 @@ namespace QuanLyShipper
             this.MatKhau_txt.Name = "MatKhau_txt";
             this.MatKhau_txt.Size = new System.Drawing.Size(100, 20);
             this.MatKhau_txt.TabIndex = 12;
+            this.MatKhau_txt.UseWaitCursor = true;
             // 
             // label2
             // 

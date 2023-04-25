@@ -60,6 +60,7 @@ namespace QuanLyShipper
             this.MatKhau_txt.Name = "MatKhau_txt";
             this.MatKhau_txt.Size = new System.Drawing.Size(100, 20);
             this.MatKhau_txt.TabIndex = 2;
+            this.MatKhau_txt.UseSystemPasswordChar = true;
             // 
             // TaiKhoan_txt
             // 

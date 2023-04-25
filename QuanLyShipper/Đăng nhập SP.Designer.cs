@@ -60,6 +60,7 @@ namespace QuanLyShipper
             this.MatKhau_txt.Name = "MatKhau_txt";
             this.MatKhau_txt.Size = new System.Drawing.Size(100, 20);
             this.MatKhau_txt.TabIndex = 7;
+            this.MatKhau_txt.UseSystemPasswordChar = true;
             this.MatKhau_txt.TextChanged += new System.EventHandler(this.MatKhau_txt_TextChanged);
             // 
             // label2

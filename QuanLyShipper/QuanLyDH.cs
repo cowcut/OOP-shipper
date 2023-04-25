@@ -16,5 +16,17 @@ namespace QuanLyShipper
         {
             InitializeComponent();
         }
+
+        private void TenDH_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frm_QuanLyDH_Load(object sender, EventArgs e)
+        {
+            DataClasses1DataContext db = new DataClasses1DataContext();
+            var dsDH = db.DonHangs;
+            BangDonHang_dgv.DataSource = dsDH;
+        }
     }
 }
