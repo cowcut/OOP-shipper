@@ -16,5 +16,37 @@ namespace QuanLyShipper
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frm_shipper_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void đToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tàiKhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Taikhoanshipper t = new Taikhoanshipper();
+            t.ShowDialog();
+
+        }
     }
 }
