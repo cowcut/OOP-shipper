@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     <Compile Include="TrangQuanLy.Designer.cs">
       <DependentUpon>TrangQuanLy.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +194,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuanLy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhanBo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThongBao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
