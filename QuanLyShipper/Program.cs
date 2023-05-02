@@ -22,4 +22,8 @@ namespace QuanLyShipper
             Application.Run(new frm_HeyYou());
         }
     }
-}    
+    class ConnectionString
+    {
+        public static string connectionString = @"Data Source=LAPTOP-DFSF0MK1\SQLEXPRESS;Initial Catalog=QuanLyShipper;Integrated Security=True";
+    }
+}

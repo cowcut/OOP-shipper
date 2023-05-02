@@ -70,7 +70,7 @@ namespace QuanLyShipper
                     {
                         MessageBox.Show("Vui lòng chọn loại tài khoản");
                     }
-    
+
                     int result = command.ExecuteNonQuery();
                     if (result > 0)
                     {
@@ -81,7 +81,6 @@ namespace QuanLyShipper
 
                         MessageBox.Show("Đăng ký tài khoản thất bại!");
                     }
-
                 }
             }
             catch (Exception ex)

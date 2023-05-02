@@ -30,11 +30,17 @@ namespace QuanLyShipper
         private void InitializeComponent()
         {
             this.QLDH_pnl = new System.Windows.Forms.Panel();
-            this.XoaDH_btn = new System.Windows.Forms.Button();
             this.SuaDH_btn = new System.Windows.Forms.Button();
-            this.ThemDH_btn = new System.Windows.Forms.Button();
+            this.sdtNN_txt = new System.Windows.Forms.TextBox();
+            this.DiemGiao_txt = new System.Windows.Forms.TextBox();
+            this.TenNguoiGiao_txt = new System.Windows.Forms.TextBox();
             this.TinhTrang_txt = new System.Windows.Forms.TextBox();
+            this.sdtNN_lbl = new System.Windows.Forms.Label();
+            this.DiemNhan_txt = new System.Windows.Forms.TextBox();
+            this.DiemGiao_lbl = new System.Windows.Forms.Label();
+            this.TenNguoiGiao_lbl = new System.Windows.Forms.Label();
             this.sdtNG_txt = new System.Windows.Forms.TextBox();
+            this.DiemNhan_lbl = new System.Windows.Forms.Label();
             this.TinhTrang_lbl = new System.Windows.Forms.Label();
             this.sdtNG_lbl = new System.Windows.Forms.Label();
             this.NguoiGui_txt = new System.Windows.Forms.TextBox();
@@ -42,14 +48,8 @@ namespace QuanLyShipper
             this.TenSP_txt = new System.Windows.Forms.TextBox();
             this.TenDH_lbl = new System.Windows.Forms.Label();
             this.BangDonHang_dgv = new System.Windows.Forms.DataGridView();
-            this.DiemNhan_lbl = new System.Windows.Forms.Label();
-            this.DiemGiao_lbl = new System.Windows.Forms.Label();
-            this.DiemNhan_txt = new System.Windows.Forms.TextBox();
-            this.DiemGiao_txt = new System.Windows.Forms.TextBox();
-            this.TenNguoiGiao_lbl = new System.Windows.Forms.Label();
-            this.sdtNN_lbl = new System.Windows.Forms.Label();
-            this.TenNguoiGiao_txt = new System.Windows.Forms.TextBox();
-            this.sdtNN_txt = new System.Windows.Forms.TextBox();
+            this.XoaDH_btn = new System.Windows.Forms.Button();
+            this.ThemDH_btn = new System.Windows.Forms.Button();
             this.QLDH_pnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BangDonHang_dgv)).BeginInit();
             this.SuspendLayout();
@@ -85,32 +85,36 @@ namespace QuanLyShipper
             this.QLDH_pnl.Size = new System.Drawing.Size(800, 450);
             this.QLDH_pnl.TabIndex = 0;
             // 
-            // XoaDH_btn
-            // 
-            this.XoaDH_btn.Location = new System.Drawing.Point(595, 119);
-            this.XoaDH_btn.Name = "XoaDH_btn";
-            this.XoaDH_btn.Size = new System.Drawing.Size(75, 23);
-            this.XoaDH_btn.TabIndex = 17;
-            this.XoaDH_btn.Text = "Xóa";
-            this.XoaDH_btn.UseVisualStyleBackColor = true;
-            // 
             // SuaDH_btn
             // 
+            this.SuaDH_btn.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.SuaDH_btn.Location = new System.Drawing.Point(592, 68);
             this.SuaDH_btn.Name = "SuaDH_btn";
-            this.SuaDH_btn.Size = new System.Drawing.Size(75, 20);
+            this.SuaDH_btn.Size = new System.Drawing.Size(94, 31);
             this.SuaDH_btn.TabIndex = 16;
             this.SuaDH_btn.Text = "Sửa";
-            this.SuaDH_btn.UseVisualStyleBackColor = true;
+            this.SuaDH_btn.UseVisualStyleBackColor = false;
             // 
-            // ThemDH_btn
+            // sdtNN_txt
             // 
-            this.ThemDH_btn.Location = new System.Drawing.Point(592, 21);
-            this.ThemDH_btn.Name = "ThemDH_btn";
-            this.ThemDH_btn.Size = new System.Drawing.Size(75, 23);
-            this.ThemDH_btn.TabIndex = 15;
-            this.ThemDH_btn.Text = "Thêm";
-            this.ThemDH_btn.UseVisualStyleBackColor = true;
+            this.sdtNN_txt.Location = new System.Drawing.Point(348, 55);
+            this.sdtNN_txt.Name = "sdtNN_txt";
+            this.sdtNN_txt.Size = new System.Drawing.Size(112, 20);
+            this.sdtNN_txt.TabIndex = 11;
+            // 
+            // DiemGiao_txt
+            // 
+            this.DiemGiao_txt.Location = new System.Drawing.Point(348, 91);
+            this.DiemGiao_txt.Name = "DiemGiao_txt";
+            this.DiemGiao_txt.Size = new System.Drawing.Size(112, 20);
+            this.DiemGiao_txt.TabIndex = 11;
+            // 
+            // TenNguoiGiao_txt
+            // 
+            this.TenNguoiGiao_txt.Location = new System.Drawing.Point(107, 119);
+            this.TenNguoiGiao_txt.Name = "TenNguoiGiao_txt";
+            this.TenNguoiGiao_txt.Size = new System.Drawing.Size(112, 20);
+            this.TenNguoiGiao_txt.TabIndex = 12;
             // 
             // TinhTrang_txt
             // 
@@ -119,12 +123,55 @@ namespace QuanLyShipper
             this.TinhTrang_txt.Size = new System.Drawing.Size(112, 20);
             this.TinhTrang_txt.TabIndex = 11;
             // 
+            // sdtNN_lbl
+            // 
+            this.sdtNN_lbl.AutoSize = true;
+            this.sdtNN_lbl.Location = new System.Drawing.Point(261, 60);
+            this.sdtNN_lbl.Name = "sdtNN_lbl";
+            this.sdtNN_lbl.Size = new System.Drawing.Size(89, 13);
+            this.sdtNN_lbl.TabIndex = 7;
+            this.sdtNN_lbl.Text = "Số điện thoại NN";
+            // 
+            // DiemNhan_txt
+            // 
+            this.DiemNhan_txt.Location = new System.Drawing.Point(107, 88);
+            this.DiemNhan_txt.Name = "DiemNhan_txt";
+            this.DiemNhan_txt.Size = new System.Drawing.Size(112, 20);
+            this.DiemNhan_txt.TabIndex = 12;
+            // 
+            // DiemGiao_lbl
+            // 
+            this.DiemGiao_lbl.AutoSize = true;
+            this.DiemGiao_lbl.Location = new System.Drawing.Point(261, 96);
+            this.DiemGiao_lbl.Name = "DiemGiao_lbl";
+            this.DiemGiao_lbl.Size = new System.Drawing.Size(81, 13);
+            this.DiemGiao_lbl.TabIndex = 7;
+            this.DiemGiao_lbl.Text = "Điểm giao hàng";
+            // 
+            // TenNguoiGiao_lbl
+            // 
+            this.TenNguoiGiao_lbl.AutoSize = true;
+            this.TenNguoiGiao_lbl.Location = new System.Drawing.Point(17, 126);
+            this.TenNguoiGiao_lbl.Name = "TenNguoiGiao_lbl";
+            this.TenNguoiGiao_lbl.Size = new System.Drawing.Size(71, 13);
+            this.TenNguoiGiao_lbl.TabIndex = 8;
+            this.TenNguoiGiao_lbl.Text = "SP giao hàng";
+            // 
             // sdtNG_txt
             // 
             this.sdtNG_txt.Location = new System.Drawing.Point(107, 51);
             this.sdtNG_txt.Name = "sdtNG_txt";
             this.sdtNG_txt.Size = new System.Drawing.Size(112, 20);
             this.sdtNG_txt.TabIndex = 12;
+            // 
+            // DiemNhan_lbl
+            // 
+            this.DiemNhan_lbl.AutoSize = true;
+            this.DiemNhan_lbl.Location = new System.Drawing.Point(17, 95);
+            this.DiemNhan_lbl.Name = "DiemNhan_lbl";
+            this.DiemNhan_lbl.Size = new System.Drawing.Size(85, 13);
+            this.DiemNhan_lbl.TabIndex = 8;
+            this.DiemNhan_lbl.Text = "Điểm nhận hàng";
             // 
             // TinhTrang_lbl
             // 
@@ -189,69 +236,29 @@ namespace QuanLyShipper
             this.BangDonHang_dgv.Size = new System.Drawing.Size(801, 250);
             this.BangDonHang_dgv.TabIndex = 6;
             // 
-            // DiemNhan_lbl
+            // XoaDH_btn
             // 
-            this.DiemNhan_lbl.AutoSize = true;
-            this.DiemNhan_lbl.Location = new System.Drawing.Point(17, 95);
-            this.DiemNhan_lbl.Name = "DiemNhan_lbl";
-            this.DiemNhan_lbl.Size = new System.Drawing.Size(85, 13);
-            this.DiemNhan_lbl.TabIndex = 8;
-            this.DiemNhan_lbl.Text = "Điểm nhận hàng";
+            this.XoaDH_btn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.XoaDH_btn.Image = global::QuanLyShipper.Properties.Resources.minus;
+            this.XoaDH_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.XoaDH_btn.Location = new System.Drawing.Point(595, 119);
+            this.XoaDH_btn.Name = "XoaDH_btn";
+            this.XoaDH_btn.Size = new System.Drawing.Size(91, 33);
+            this.XoaDH_btn.TabIndex = 17;
+            this.XoaDH_btn.Text = "Xóa";
+            this.XoaDH_btn.UseVisualStyleBackColor = false;
             // 
-            // DiemGiao_lbl
+            // ThemDH_btn
             // 
-            this.DiemGiao_lbl.AutoSize = true;
-            this.DiemGiao_lbl.Location = new System.Drawing.Point(261, 96);
-            this.DiemGiao_lbl.Name = "DiemGiao_lbl";
-            this.DiemGiao_lbl.Size = new System.Drawing.Size(81, 13);
-            this.DiemGiao_lbl.TabIndex = 7;
-            this.DiemGiao_lbl.Text = "Điểm giao hàng";
-            // 
-            // DiemNhan_txt
-            // 
-            this.DiemNhan_txt.Location = new System.Drawing.Point(107, 88);
-            this.DiemNhan_txt.Name = "DiemNhan_txt";
-            this.DiemNhan_txt.Size = new System.Drawing.Size(112, 20);
-            this.DiemNhan_txt.TabIndex = 12;
-            // 
-            // DiemGiao_txt
-            // 
-            this.DiemGiao_txt.Location = new System.Drawing.Point(348, 91);
-            this.DiemGiao_txt.Name = "DiemGiao_txt";
-            this.DiemGiao_txt.Size = new System.Drawing.Size(112, 20);
-            this.DiemGiao_txt.TabIndex = 11;
-            // 
-            // TenNguoiGiao_lbl
-            // 
-            this.TenNguoiGiao_lbl.AutoSize = true;
-            this.TenNguoiGiao_lbl.Location = new System.Drawing.Point(17, 126);
-            this.TenNguoiGiao_lbl.Name = "TenNguoiGiao_lbl";
-            this.TenNguoiGiao_lbl.Size = new System.Drawing.Size(71, 13);
-            this.TenNguoiGiao_lbl.TabIndex = 8;
-            this.TenNguoiGiao_lbl.Text = "SP giao hàng";
-            // 
-            // sdtNN_lbl
-            // 
-            this.sdtNN_lbl.AutoSize = true;
-            this.sdtNN_lbl.Location = new System.Drawing.Point(261, 60);
-            this.sdtNN_lbl.Name = "sdtNN_lbl";
-            this.sdtNN_lbl.Size = new System.Drawing.Size(89, 13);
-            this.sdtNN_lbl.TabIndex = 7;
-            this.sdtNN_lbl.Text = "Số điện thoại NN";
-            // 
-            // TenNguoiGiao_txt
-            // 
-            this.TenNguoiGiao_txt.Location = new System.Drawing.Point(107, 119);
-            this.TenNguoiGiao_txt.Name = "TenNguoiGiao_txt";
-            this.TenNguoiGiao_txt.Size = new System.Drawing.Size(112, 20);
-            this.TenNguoiGiao_txt.TabIndex = 12;
-            // 
-            // sdtNN_txt
-            // 
-            this.sdtNN_txt.Location = new System.Drawing.Point(348, 55);
-            this.sdtNN_txt.Name = "sdtNN_txt";
-            this.sdtNN_txt.Size = new System.Drawing.Size(112, 20);
-            this.sdtNN_txt.TabIndex = 11;
+            this.ThemDH_btn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ThemDH_btn.Image = global::QuanLyShipper.Properties.Resources.SmallPlus;
+            this.ThemDH_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ThemDH_btn.Location = new System.Drawing.Point(592, 21);
+            this.ThemDH_btn.Name = "ThemDH_btn";
+            this.ThemDH_btn.Size = new System.Drawing.Size(94, 33);
+            this.ThemDH_btn.TabIndex = 15;
+            this.ThemDH_btn.Text = "Thêm";
+            this.ThemDH_btn.UseVisualStyleBackColor = false;
             // 
             // frm_QuanLyDH
             // 
