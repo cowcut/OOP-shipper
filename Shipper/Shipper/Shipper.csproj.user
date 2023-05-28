@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\formDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\formTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\formThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\formVanChuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RJControls\RJButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="RJControls\RJComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="RJControls\RJLogin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="RJControls\RJPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="RJControls\RJToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
