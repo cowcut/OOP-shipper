@@ -1,0 +1,66 @@
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.AssemblyReference.cache
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.SuggestedBindingRedirects.cache
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Form1.resources
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.GenerateResource.cache
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\bin\Debug\FormMainMenu.exe.config
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\bin\Debug\FormMainMenu.exe
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\bin\Debug\FormMainMenu.pdb
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Properties.Resources.resources
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.CoreCompileInputs.cache
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.exe
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.pdb
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormDashboard.resources
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormCaiDat.resources
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormQLShipper.resources
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormPBShipper.resources
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormThongBao.resources
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\QuanLyShipper.RJControls.RJButton.resources
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\bin\Debug\Interop.WMPLib.dll
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\Interop.WMPLib.dll
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\hohan\source\repos\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.ResolveComReference.cache
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\bin\Debug\FormMainMenu.exe.config
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\bin\Debug\FormMainMenu.exe
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\bin\Debug\FormMainMenu.pdb
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\bin\Debug\Interop.WMPLib.dll
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.AssemblyReference.cache
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.SuggestedBindingRedirects.cache
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\Interop.WMPLib.dll
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.ResolveComReference.cache
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Form1.resources
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormCaiDat.resources
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormDashboard.resources
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormPBShipper.resources
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormQLShipper.resources
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormThongBao.resources
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Properties.Resources.resources
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\QuanLyShipper.RJControls.RJButton.resources
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.GenerateResource.cache
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.CoreCompileInputs.cache
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.exe
+C:\Users\zacer\Documents\Zalo Received Files\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.pdb
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\bin\Debug\FormMainMenu.exe.config
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\bin\Debug\FormMainMenu.exe
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\bin\Debug\FormMainMenu.pdb
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\bin\Debug\Interop.WMPLib.dll
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\bin\Debug\AxInterop.WMPLib.dll
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.AssemblyReference.cache
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.SuggestedBindingRedirects.cache
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\Interop.WMPLib.dll
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\AxInterop.WMPLib.dll
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.ResolveComReference.cache
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Form1.resources
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormCaiDat.resources
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormDashboard.resources
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormPBShipper.resources
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormQLShipper.resources
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Forms.FormThongBao.resources
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.Properties.Resources.resources
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\QuanLyShipper.RJControls.RJButton.resources
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.GenerateResource.cache
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.csproj.CoreCompileInputs.cache
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.exe
+E:\Code\oop\QuanLy\FormMainMenu\FormMainMenu\obj\Debug\FormMainMenu.pdb
