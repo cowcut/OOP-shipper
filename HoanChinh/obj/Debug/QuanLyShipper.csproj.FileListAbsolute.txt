@@ -1,0 +1,45 @@
+C:\Users\hohan\source\repos\QuanLyShipper\QuanLyShipper\bin\Debug\QuanLyShipper.exe.config
+C:\Users\hohan\source\repos\QuanLyShipper\QuanLyShipper\bin\Debug\QuanLyShipper.exe
+C:\Users\hohan\source\repos\QuanLyShipper\QuanLyShipper\bin\Debug\QuanLyShipper.pdb
+C:\Users\hohan\source\repos\QuanLyShipper\QuanLyShipper\obj\Debug\QuanLyShipper.csproj.AssemblyReference.cache
+C:\Users\hohan\source\repos\QuanLyShipper\QuanLyShipper\obj\Debug\QuanLyShipper.csproj.SuggestedBindingRedirects.cache
+C:\Users\hohan\source\repos\QuanLyShipper\QuanLyShipper\obj\Debug\QuanLyShipper.Properties.Resources.resources
+C:\Users\hohan\source\repos\QuanLyShipper\QuanLyShipper\obj\Debug\QuanLyShipper.csproj.GenerateResource.cache
+C:\Users\hohan\source\repos\QuanLyShipper\QuanLyShipper\obj\Debug\QuanLyShipper.csproj.CoreCompileInputs.cache
+C:\Users\hohan\source\repos\QuanLyShipper\QuanLyShipper\obj\Debug\QuanLyShipper.exe
+C:\Users\hohan\source\repos\QuanLyShipper\QuanLyShipper\obj\Debug\QuanLyShipper.pdb
+C:\Users\hohan\source\repos\QuanLyShipper\QuanLyShipper\obj\Debug\QuanLyShipper.frm_HeyYou.resources
+C:\Users\hohan\source\repos\QuanLyShipper\QuanLyShipper\obj\Debug\QuanLyShipper.RJControls.RJButton.resources
+C:\Users\zacer\Documents\Zalo Received Files\QuanLyShipper (1)\bin\Debug\QuanLyShipper.exe.config
+C:\Users\zacer\Documents\Zalo Received Files\QuanLyShipper (1)\bin\Debug\QuanLyShipper.exe
+C:\Users\zacer\Documents\Zalo Received Files\QuanLyShipper (1)\bin\Debug\QuanLyShipper.pdb
+C:\Users\zacer\Documents\Zalo Received Files\QuanLyShipper (1)\obj\Debug\QuanLyShipper.csproj.AssemblyReference.cache
+C:\Users\zacer\Documents\Zalo Received Files\QuanLyShipper (1)\obj\Debug\QuanLyShipper.csproj.SuggestedBindingRedirects.cache
+C:\Users\zacer\Documents\Zalo Received Files\QuanLyShipper (1)\obj\Debug\QuanLyShipper.RJControls.RJButton.resources
+C:\Users\zacer\Documents\Zalo Received Files\QuanLyShipper (1)\obj\Debug\QuanLyShipper.frm_HeyYou.resources
+C:\Users\zacer\Documents\Zalo Received Files\QuanLyShipper (1)\obj\Debug\QuanLyShipper.Properties.Resources.resources
+C:\Users\zacer\Documents\Zalo Received Files\QuanLyShipper (1)\obj\Debug\QuanLyShipper.csproj.GenerateResource.cache
+C:\Users\zacer\Documents\Zalo Received Files\QuanLyShipper (1)\obj\Debug\QuanLyShipper.csproj.CoreCompileInputs.cache
+C:\Users\zacer\Documents\Zalo Received Files\QuanLyShipper (1)\obj\Debug\QuanLyShipper.exe
+C:\Users\zacer\Documents\Zalo Received Files\QuanLyShipper (1)\obj\Debug\QuanLyShipper.pdb
+E:\Code\oop\DangNhap\QuanLyShipper (1)\bin\Debug\QuanLyShipper.exe.config
+E:\Code\oop\DangNhap\QuanLyShipper (1)\bin\Debug\QuanLyShipper.exe
+E:\Code\oop\DangNhap\QuanLyShipper (1)\bin\Debug\QuanLyShipper.pdb
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.csproj.AssemblyReference.cache
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.csproj.SuggestedBindingRedirects.cache
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.frm_DangKy.resources
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.RJControls.RJButton.resources
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.frm_HeyYou.resources
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.Properties.Resources.resources
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.csproj.GenerateResource.cache
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.csproj.CoreCompileInputs.cache
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.exe
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.pdb
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\FormMainMenu.QuanLy.resources
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\FormMainMenu.Forms.FormCaiDat.resources
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\FormMainMenu.Forms.FormDashboard.resources
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\FormMainMenu.Forms.FormPBShipper.resources
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\FormMainMenu.Forms.FormQLShipper.resources
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\FormMainMenu.Forms.FormThongBao.resources
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.formshipper.frm_shipper.resources
+E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.formshipper.Shipper.resources
