@@ -1,9 +1,0 @@
-E:\Code\oop\DangKy\QuanLyShipper\obj\Debug\DangKy.csproj.AssemblyReference.cache
-E:\Code\oop\DangKy\QuanLyShipper\obj\Debug\DangKy.csproj.SuggestedBindingRedirects.cache
-E:\Code\oop\DangKy\QuanLyShipper\obj\Debug\QuanLyShipper.frm_DangKy.resources
-E:\Code\oop\DangKy\QuanLyShipper\obj\Debug\QuanLyShipper.RJControls.RJButton.resources
-E:\Code\oop\DangKy\QuanLyShipper\obj\Debug\QuanLyShipper.Properties.Resources.resources
-E:\Code\oop\DangKy\QuanLyShipper\obj\Debug\DangKy.csproj.GenerateResource.cache
-E:\Code\oop\DangKy\QuanLyShipper\obj\Debug\DangKy.csproj.CoreCompileInputs.cache
-E:\Code\oop\DangKy\QuanLyShipper\obj\Debug\QuanLyShipper.exe
-E:\Code\oop\DangKy\QuanLyShipper\obj\Debug\QuanLyShipper.pdb
