@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\HoanChinh",
-    "\\HoanChinh\\formquanly"
+    "\\HoanChinh\\formquanly",
+    "\\HoanChinh\\formshipper"
   ],
-  "SelectedNode": "\\HoanChinh\\formquanly\\QuanLy.Designer.cs",
+  "SelectedNode": "\\HoanChinh\\QuanLyShipper.sln",
   "PreviewInSolutionExplorer": false
 }

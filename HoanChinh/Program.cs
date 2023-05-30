@@ -17,7 +17,7 @@ namespace QuanLyShipper
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_HeyYou());
+            Application.Run(new Shipper());
         }
     }
 }

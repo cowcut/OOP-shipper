@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyShipper.formshipper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -96,6 +97,10 @@ namespace QuanLyShipper
         private void DangNhap_btn_Click_1(object sender, EventArgs e)
         {
             
+                this.Hide();
+            this.Close();
+                Shipper frmSP = new Shipper();
+                ShowDialog(frmSP);
         }
     }
 }

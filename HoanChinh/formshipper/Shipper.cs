@@ -99,7 +99,7 @@ namespace QuanLyShipper.formshipper
         {
             this.Hide();
             frm_HeyYou frmDN = new frm_HeyYou();
-            ShowDialog(frmDN);
+            Show(frmDN);
 
         }
         private void Reset()
