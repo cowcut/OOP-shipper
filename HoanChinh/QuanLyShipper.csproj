@@ -125,6 +125,18 @@
     <EmbeddedResource Include="formquanly\QuanLy.resx">
       <DependentUpon>QuanLy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formshipper\Forms\frm_DonHang.resx">
+      <DependentUpon>frm_DonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formshipper\Forms\frm_TaiKhoan.resx">
+      <DependentUpon>frm_TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formshipper\Forms\frm_ThongBao.resx">
+      <DependentUpon>frm_ThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formshipper\Forms\frm_VanChuyen.resx">
+      <DependentUpon>frm_VanChuyen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formshipper\Shipper.resx">
       <DependentUpon>Shipper.cs</DependentUpon>
     </EmbeddedResource>

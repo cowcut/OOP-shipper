@@ -31,23 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shipper));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.btn_dangxuat = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.btn_thongbao = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_vanchuyen = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_donhang = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_taikhoan = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.lbl_trangchu = new System.Windows.Forms.Label();
-            this.pic_home = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.paneldesktop = new System.Windows.Forms.PictureBox();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.pic_home = new System.Windows.Forms.PictureBox();
+            this.btn_dangxuat = new System.Windows.Forms.Button();
+            this.btn_thongbao = new System.Windows.Forms.Button();
+            this.btn_vanchuyen = new System.Windows.Forms.Button();
+            this.btn_donhang = new System.Windows.Forms.Button();
+            this.btn_taikhoan = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -55,15 +55,16 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_home)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.paneldesktop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_home)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(107)))), ((int)(((byte)(225)))));
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel5);
@@ -79,27 +80,11 @@
             resources.ApplyResources(this.panel7, "panel7");
             this.panel7.Name = "panel7";
             // 
-            // btn_dangxuat
-            // 
-            resources.ApplyResources(this.btn_dangxuat, "btn_dangxuat");
-            this.btn_dangxuat.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_dangxuat.Name = "btn_dangxuat";
-            this.btn_dangxuat.UseVisualStyleBackColor = true;
-            this.btn_dangxuat.Click += new System.EventHandler(this.btn_dangxuat_Click);
-            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.btn_thongbao);
             resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Name = "panel6";
-            // 
-            // btn_thongbao
-            // 
-            resources.ApplyResources(this.btn_thongbao, "btn_thongbao");
-            this.btn_thongbao.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_thongbao.Name = "btn_thongbao";
-            this.btn_thongbao.UseVisualStyleBackColor = true;
-            this.btn_thongbao.Click += new System.EventHandler(this.btn_thongbao_Click);
             // 
             // panel5
             // 
@@ -107,27 +92,11 @@
             resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
             // 
-            // btn_vanchuyen
-            // 
-            resources.ApplyResources(this.btn_vanchuyen, "btn_vanchuyen");
-            this.btn_vanchuyen.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_vanchuyen.Name = "btn_vanchuyen";
-            this.btn_vanchuyen.UseVisualStyleBackColor = true;
-            this.btn_vanchuyen.Click += new System.EventHandler(this.btn_vanchuyen_Click);
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.btn_donhang);
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
-            // 
-            // btn_donhang
-            // 
-            resources.ApplyResources(this.btn_donhang, "btn_donhang");
-            this.btn_donhang.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_donhang.Name = "btn_donhang";
-            this.btn_donhang.UseVisualStyleBackColor = true;
-            this.btn_donhang.Click += new System.EventHandler(this.btn_donhang_Click);
             // 
             // panel3
             // 
@@ -135,28 +104,15 @@
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
-            // btn_taikhoan
-            // 
-            resources.ApplyResources(this.btn_taikhoan, "btn_taikhoan");
-            this.btn_taikhoan.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_taikhoan.Name = "btn_taikhoan";
-            this.btn_taikhoan.UseVisualStyleBackColor = true;
-            this.btn_taikhoan.Click += new System.EventHandler(this.btn_taikhoan_Click);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox1);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
             // panel8
             // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(107)))), ((int)(((byte)(225)))));
             this.panel8.Controls.Add(this.btn_exit);
             this.panel8.Controls.Add(this.lbl_trangchu);
             this.panel8.Controls.Add(this.pic_home);
@@ -169,12 +125,6 @@
             this.lbl_trangchu.ForeColor = System.Drawing.SystemColors.Control;
             this.lbl_trangchu.Name = "lbl_trangchu";
             // 
-            // pic_home
-            // 
-            resources.ApplyResources(this.pic_home, "pic_home");
-            this.pic_home.Name = "pic_home";
-            this.pic_home.TabStop = false;
-            // 
             // panel9
             // 
             this.panel9.Controls.Add(this.paneldesktop);
@@ -183,6 +133,7 @@
             // 
             // paneldesktop
             // 
+            this.paneldesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(107)))), ((int)(((byte)(225)))));
             resources.ApplyResources(this.paneldesktop, "paneldesktop");
             this.paneldesktop.Name = "paneldesktop";
             this.paneldesktop.TabStop = false;
@@ -190,9 +141,67 @@
             // btn_exit
             // 
             resources.ApplyResources(this.btn_exit, "btn_exit");
+            this.btn_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(108)))), ((int)(((byte)(249)))));
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.UseVisualStyleBackColor = true;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
+            // pic_home
+            // 
+            resources.ApplyResources(this.pic_home, "pic_home");
+            this.pic_home.Name = "pic_home";
+            this.pic_home.TabStop = false;
+            // 
+            // btn_dangxuat
+            // 
+            resources.ApplyResources(this.btn_dangxuat, "btn_dangxuat");
+            this.btn_dangxuat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_dangxuat.Name = "btn_dangxuat";
+            this.btn_dangxuat.UseVisualStyleBackColor = true;
+            this.btn_dangxuat.Click += new System.EventHandler(this.btn_dangxuat_Click);
+            // 
+            // btn_thongbao
+            // 
+            this.btn_thongbao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(107)))), ((int)(((byte)(225)))));
+            resources.ApplyResources(this.btn_thongbao, "btn_thongbao");
+            this.btn_thongbao.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_thongbao.Name = "btn_thongbao";
+            this.btn_thongbao.UseVisualStyleBackColor = false;
+            this.btn_thongbao.Click += new System.EventHandler(this.btn_thongbao_Click);
+            // 
+            // btn_vanchuyen
+            // 
+            this.btn_vanchuyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(107)))), ((int)(((byte)(225)))));
+            resources.ApplyResources(this.btn_vanchuyen, "btn_vanchuyen");
+            this.btn_vanchuyen.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_vanchuyen.Name = "btn_vanchuyen";
+            this.btn_vanchuyen.UseVisualStyleBackColor = false;
+            this.btn_vanchuyen.Click += new System.EventHandler(this.btn_vanchuyen_Click);
+            // 
+            // btn_donhang
+            // 
+            this.btn_donhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(107)))), ((int)(((byte)(225)))));
+            resources.ApplyResources(this.btn_donhang, "btn_donhang");
+            this.btn_donhang.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_donhang.Name = "btn_donhang";
+            this.btn_donhang.UseVisualStyleBackColor = false;
+            this.btn_donhang.Click += new System.EventHandler(this.btn_donhang_Click);
+            // 
+            // btn_taikhoan
+            // 
+            this.btn_taikhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(107)))), ((int)(((byte)(225)))));
+            resources.ApplyResources(this.btn_taikhoan, "btn_taikhoan");
+            this.btn_taikhoan.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_taikhoan.Name = "btn_taikhoan";
+            this.btn_taikhoan.UseVisualStyleBackColor = false;
+            this.btn_taikhoan.Click += new System.EventHandler(this.btn_taikhoan_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(107)))), ((int)(((byte)(225)))));
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // Shipper
             // 
@@ -210,12 +219,12 @@
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_home)).EndInit();
             this.panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.paneldesktop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_home)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

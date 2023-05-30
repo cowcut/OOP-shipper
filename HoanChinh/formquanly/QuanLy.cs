@@ -43,6 +43,11 @@ namespace FormMainMenu
             string color = ThemeColor.ColorList[index];
             return ColorTranslator.FromHtml(color);
         }
+
+        private void QuanLy_Load(object sender, EventArgs e)
+        {
+
+        }
         //private void ActivateButton(object btnSender)
         //{
         //    if (btnSender != null)
@@ -72,7 +77,7 @@ namespace FormMainMenu
         //            currentButton.ForeColor = Color.Gainsboro;
         //            currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
         //        }
-            
+
         //}
         //private void OpenChildForm(Form childForm, object btnSender)
         //{

@@ -43,3 +43,22 @@ E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\FormMainMenu.Forms.FormQLShippe
 E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\FormMainMenu.Forms.FormThongBao.resources
 E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.formshipper.frm_shipper.resources
 E:\Code\oop\DangNhap\QuanLyShipper (1)\obj\Debug\QuanLyShipper.formshipper.Shipper.resources
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.csproj.AssemblyReference.cache
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.csproj.SuggestedBindingRedirects.cache
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.frm_DangKy.resources
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\FormMainMenu.QuanLy.resources
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.formshipper.Shipper.resources
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.RJControls.RJButton.resources
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.frm_HeyYou.resources
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.Properties.Resources.resources
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.csproj.GenerateResource.cache
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.csproj.CoreCompileInputs.cache
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.exe
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.pdb
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.formshipper.Forms.frm_DonHang.resources
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.formshipper.Forms.frm_TaiKhoan.resources
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.formshipper.Forms.frm_VanChuyen.resources
+E:\oop-demo\OOP-shipper\HoanChinh\bin\Debug\QuanLyShipper.exe.config
+E:\oop-demo\OOP-shipper\HoanChinh\bin\Debug\QuanLyShipper.exe
+E:\oop-demo\OOP-shipper\HoanChinh\bin\Debug\QuanLyShipper.pdb
+E:\oop-demo\OOP-shipper\HoanChinh\obj\Debug\QuanLyShipper.formshipper.Forms.frm_ThongBao.resources

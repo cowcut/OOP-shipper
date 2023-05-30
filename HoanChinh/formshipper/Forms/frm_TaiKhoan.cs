@@ -16,5 +16,15 @@ namespace QuanLyShipper.formshipper.Forms
         {
             InitializeComponent();
         }
+
+        private void btn_nhandon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

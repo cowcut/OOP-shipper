@@ -21,5 +21,10 @@ namespace QuanLyShipper.formshipper.Forms
         {
 
         }
+
+        private void rjLogin2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
