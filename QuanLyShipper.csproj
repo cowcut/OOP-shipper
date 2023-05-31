@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFC9175F-0A81-472D-98AB-C40663842D70}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyShipper</RootNamespace>
+    <AssemblyName>QuanLyShipper</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKy.designer.cs">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="formquanly\QuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formquanly\QuanLy.Designer.cs">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formquanly\ThemeColor.cs" />
+    <Compile Include="formshipper\Shipper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formshipper\Shipper.Designer.cs">
+      <DependentUpon>Shipper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formshipper\Forms\frm_DonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formshipper\Forms\frm_DonHang.Designer.cs">
+      <DependentUpon>frm_DonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formshipper\Forms\frm_TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formshipper\Forms\frm_TaiKhoan.Designer.cs">
+      <DependentUpon>frm_TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formshipper\Forms\frm_ThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formshipper\Forms\frm_ThongBao.Designer.cs">
+      <DependentUpon>frm_ThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formshipper\Forms\frm_VanChuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formshipper\Forms\frm_VanChuyen.Designer.cs">
+      <DependentUpon>frm_VanChuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RJControls\RJButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RJControls\RJButton.Designer.cs">
+      <DependentUpon>RJButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_HeyYou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_HeyYou.Designer.cs">
+      <DependentUpon>frm_HeyYou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RJControls\RJComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RJControls\RJLogin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RJControls\RJPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RJControls\RJToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sqlketnoi.cs" />
+    <EmbeddedResource Include="DangKy.resx">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formquanly\QuanLy.resx">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formshipper\Forms\frm_DonHang.resx">
+      <DependentUpon>frm_DonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formshipper\Forms\frm_TaiKhoan.resx">
+      <DependentUpon>frm_TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formshipper\Forms\frm_ThongBao.resx">
+      <DependentUpon>frm_ThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formshipper\Forms\frm_VanChuyen.resx">
+      <DependentUpon>frm_VanChuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formshipper\Shipper.resx">
+      <DependentUpon>Shipper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RJControls\RJButton.resx">
+      <DependentUpon>RJButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_HeyYou.resx">
+      <DependentUpon>frm_HeyYou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuanLi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoSP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Nav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_heyou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1rsz_1donhang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1rsz_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1ship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Welcome to Heyou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2561184c0d83292e2814a8db5dfe49e1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2561184c0d83292e2814a8db5dfe49e11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown and Yellow Minimalist Home Sweet Home Delivery Facebook Cover %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown and Yellow Minimalist Home Sweet Home Delivery Facebook Cover %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown and Yellow Minimalist Home Sweet Home Delivery Facebook Cover %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeYou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeYou-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeYou-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeYou-removebg-preview %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeYou-removebg-preview %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeYou-removebg-preview %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeYou-removebg-preview %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeYou-removebg-preview %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeYou-removebg-preview %286%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeYou-removebg-preview %286%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeYou-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4333280915783_61e3bf91437d6767fa6f70c85832537e %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ava.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bando1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown and Yellow Minimalist Home Sweet Home Delivery Facebook Cover %282%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaiDat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dangxuat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Đơnhàng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_formchild.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PBSP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhanBo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phanbo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QLSP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuanLy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThongBao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThongBao1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="formkhachhang\" />
+    <Folder Include="formquanly\Forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Welcome to Heyou1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
