@@ -51,10 +51,9 @@ namespace QuanLyShipper
             this.Main_pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Main_pnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Main_pnl.Controls.Add(this.rjPanel1);
-            this.Main_pnl.Location = new System.Drawing.Point(3, 0);
-            this.Main_pnl.Margin = new System.Windows.Forms.Padding(4);
+            this.Main_pnl.Location = new System.Drawing.Point(2, 0);
             this.Main_pnl.Name = "Main_pnl";
-            this.Main_pnl.Size = new System.Drawing.Size(1161, 686);
+            this.Main_pnl.Size = new System.Drawing.Size(872, 558);
             this.Main_pnl.TabIndex = 1;
             this.Main_pnl.Paint += new System.Windows.Forms.PaintEventHandler(this.Main_pnl_Paint);
             // 
@@ -75,10 +74,9 @@ namespace QuanLyShipper
             this.rjPanel1.Controls.Add(this.LoaiTK_cbbox);
             this.rjPanel1.Controls.Add(this.DangNhap_btn);
             this.rjPanel1.ForeColor = System.Drawing.Color.White;
-            this.rjPanel1.Location = new System.Drawing.Point(693, 12);
-            this.rjPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.rjPanel1.Location = new System.Drawing.Point(520, 10);
             this.rjPanel1.Name = "rjPanel1";
-            this.rjPanel1.Size = new System.Drawing.Size(429, 577);
+            this.rjPanel1.Size = new System.Drawing.Size(322, 469);
             this.rjPanel1.TabIndex = 20;
             this.rjPanel1.TextColor = System.Drawing.Color.White;
             // 
@@ -93,10 +91,9 @@ namespace QuanLyShipper
             this.rjLogin1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjLogin1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjLogin1.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.rjLogin1.Location = new System.Drawing.Point(55, 100);
-            this.rjLogin1.Margin = new System.Windows.Forms.Padding(4);
+            this.rjLogin1.Location = new System.Drawing.Point(41, 81);
             this.rjLogin1.Name = "rjLogin1";
-            this.rjLogin1.Size = new System.Drawing.Size(333, 49);
+            this.rjLogin1.Size = new System.Drawing.Size(250, 40);
             this.rjLogin1.TabIndex = 21;
             this.rjLogin1.Text = "Login to HeYou";
             this.rjLogin1.TextColor = System.Drawing.Color.MediumOrchid;
@@ -113,10 +110,9 @@ namespace QuanLyShipper
             this.DangKy_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DangKy_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DangKy_btn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.DangKy_btn.Location = new System.Drawing.Point(271, 17);
-            this.DangKy_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.DangKy_btn.Location = new System.Drawing.Point(203, 14);
             this.DangKy_btn.Name = "DangKy_btn";
-            this.DangKy_btn.Size = new System.Drawing.Size(136, 37);
+            this.DangKy_btn.Size = new System.Drawing.Size(102, 30);
             this.DangKy_btn.TabIndex = 25;
             this.DangKy_btn.Text = "Sign Up";
             this.DangKy_btn.TextColor = System.Drawing.Color.SeaGreen;
@@ -134,10 +130,9 @@ namespace QuanLyShipper
             this.rjLogin4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjLogin4.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjLogin4.ForeColor = System.Drawing.Color.Black;
-            this.rjLogin4.Location = new System.Drawing.Point(207, 405);
-            this.rjLogin4.Margin = new System.Windows.Forms.Padding(4);
+            this.rjLogin4.Location = new System.Drawing.Point(155, 329);
             this.rjLogin4.Name = "rjLogin4";
-            this.rjLogin4.Size = new System.Drawing.Size(200, 32);
+            this.rjLogin4.Size = new System.Drawing.Size(150, 26);
             this.rjLogin4.TabIndex = 24;
             this.rjLogin4.Text = "Forget Password";
             this.rjLogin4.TextColor = System.Drawing.Color.Black;
@@ -155,10 +150,9 @@ namespace QuanLyShipper
             this.rjLogin3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjLogin3.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjLogin3.ForeColor = System.Drawing.Color.Black;
-            this.rjLogin3.Location = new System.Drawing.Point(25, 249);
-            this.rjLogin3.Margin = new System.Windows.Forms.Padding(4);
+            this.rjLogin3.Location = new System.Drawing.Point(19, 202);
             this.rjLogin3.Name = "rjLogin3";
-            this.rjLogin3.Size = new System.Drawing.Size(200, 32);
+            this.rjLogin3.Size = new System.Drawing.Size(150, 26);
             this.rjLogin3.TabIndex = 23;
             this.rjLogin3.Text = "Username";
             this.rjLogin3.TextColor = System.Drawing.Color.Black;
@@ -174,15 +168,15 @@ namespace QuanLyShipper
             this.TaiKhoan_txt.BorderSize = 3;
             this.TaiKhoan_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TaiKhoan_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.TaiKhoan_txt.Location = new System.Drawing.Point(55, 278);
-            this.TaiKhoan_txt.Margin = new System.Windows.Forms.Padding(5);
+            this.TaiKhoan_txt.Location = new System.Drawing.Point(41, 226);
+            this.TaiKhoan_txt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TaiKhoan_txt.Multiline = false;
             this.TaiKhoan_txt.Name = "TaiKhoan_txt";
-            this.TaiKhoan_txt.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.TaiKhoan_txt.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.TaiKhoan_txt.PasswordChar = false;
             this.TaiKhoan_txt.PlaceholderColor = System.Drawing.Color.Silver;
             this.TaiKhoan_txt.PlaceholderText = "Enter username";
-            this.TaiKhoan_txt.Size = new System.Drawing.Size(333, 39);
+            this.TaiKhoan_txt.Size = new System.Drawing.Size(250, 31);
             this.TaiKhoan_txt.TabIndex = 10;
             this.TaiKhoan_txt.Texts = "";
             this.TaiKhoan_txt.UnderlinedStyle = false;
@@ -196,15 +190,15 @@ namespace QuanLyShipper
             this.MatKhau_txt.BorderSize = 3;
             this.MatKhau_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MatKhau_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.MatKhau_txt.Location = new System.Drawing.Point(55, 366);
-            this.MatKhau_txt.Margin = new System.Windows.Forms.Padding(5);
+            this.MatKhau_txt.Location = new System.Drawing.Point(41, 297);
+            this.MatKhau_txt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MatKhau_txt.Multiline = false;
             this.MatKhau_txt.Name = "MatKhau_txt";
-            this.MatKhau_txt.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.MatKhau_txt.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.MatKhau_txt.PasswordChar = true;
             this.MatKhau_txt.PlaceholderColor = System.Drawing.Color.Silver;
             this.MatKhau_txt.PlaceholderText = "Enter password";
-            this.MatKhau_txt.Size = new System.Drawing.Size(333, 39);
+            this.MatKhau_txt.Size = new System.Drawing.Size(250, 31);
             this.MatKhau_txt.TabIndex = 11;
             this.MatKhau_txt.Texts = "";
             this.MatKhau_txt.UnderlinedStyle = false;
@@ -221,10 +215,9 @@ namespace QuanLyShipper
             this.rjLogin2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjLogin2.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjLogin2.ForeColor = System.Drawing.Color.Black;
-            this.rjLogin2.Location = new System.Drawing.Point(25, 329);
-            this.rjLogin2.Margin = new System.Windows.Forms.Padding(4);
+            this.rjLogin2.Location = new System.Drawing.Point(19, 267);
             this.rjLogin2.Name = "rjLogin2";
-            this.rjLogin2.Size = new System.Drawing.Size(200, 49);
+            this.rjLogin2.Size = new System.Drawing.Size(150, 40);
             this.rjLogin2.TabIndex = 22;
             this.rjLogin2.Text = "Password";
             this.rjLogin2.TextColor = System.Drawing.Color.Black;
@@ -247,12 +240,11 @@ namespace QuanLyShipper
             "KhachHang"});
             this.LoaiTK_cbbox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.LoaiTK_cbbox.ListTextColor = System.Drawing.Color.Black;
-            this.LoaiTK_cbbox.Location = new System.Drawing.Point(87, 203);
-            this.LoaiTK_cbbox.Margin = new System.Windows.Forms.Padding(4);
-            this.LoaiTK_cbbox.MinimumSize = new System.Drawing.Size(267, 37);
+            this.LoaiTK_cbbox.Location = new System.Drawing.Point(65, 165);
+            this.LoaiTK_cbbox.MinimumSize = new System.Drawing.Size(200, 30);
             this.LoaiTK_cbbox.Name = "LoaiTK_cbbox";
             this.LoaiTK_cbbox.Padding = new System.Windows.Forms.Padding(1);
-            this.LoaiTK_cbbox.Size = new System.Drawing.Size(267, 37);
+            this.LoaiTK_cbbox.Size = new System.Drawing.Size(200, 30);
             this.LoaiTK_cbbox.TabIndex = 12;
             this.LoaiTK_cbbox.Texts = "Loại Tài Khoản";
             this.LoaiTK_cbbox.UseWaitCursor = true;
@@ -269,10 +261,9 @@ namespace QuanLyShipper
             this.DangNhap_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DangNhap_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DangNhap_btn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.DangNhap_btn.Location = new System.Drawing.Point(55, 464);
-            this.DangNhap_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.DangNhap_btn.Location = new System.Drawing.Point(41, 377);
             this.DangNhap_btn.Name = "DangNhap_btn";
-            this.DangNhap_btn.Size = new System.Drawing.Size(333, 37);
+            this.DangNhap_btn.Size = new System.Drawing.Size(250, 30);
             this.DangNhap_btn.TabIndex = 13;
             this.DangNhap_btn.Text = "Sign In";
             this.DangNhap_btn.TextColor = System.Drawing.Color.SeaGreen;
@@ -281,13 +272,12 @@ namespace QuanLyShipper
             // 
             // frm_HeyYou
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1157, 629);
+            this.ClientSize = new System.Drawing.Size(868, 511);
             this.Controls.Add(this.Main_pnl);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_HeyYou";
             this.Text = "HeyYou";
             this.Load += new System.EventHandler(this.frm_HeyYou_Load);

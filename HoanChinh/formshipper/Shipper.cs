@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyShipper.formshipper
 {
-    public partial class Shipper : Form
+    public partial class frm_Shipper : Form
     {
         private Button currentButton;
         private Form activeForm;
-        public Shipper()
+        public frm_Shipper()
         {
             InitializeComponent();
             btn_exit.Visible = false;
@@ -99,7 +99,7 @@ namespace QuanLyShipper.formshipper
         {
             this.Hide();
             frm_HeyYou frmDN = new frm_HeyYou();
-            Show(frmDN);
+            frmDN.Show();
 
         }
         private void Reset()
@@ -112,6 +112,17 @@ namespace QuanLyShipper.formshipper
 
         }
 
-        
+        private void paneldesktop_Resize(object sender, EventArgs e)
+        {
+            FormCollection fc = Application.OpenForms;
+            foreach (Form f in fc)
+            {
+                if (f.Name == "frm_QuanLyKhoaHoc")
+                {
+                    f.Height = ShipperChinh_pnl.Height;
+                    f.Width = ShipperChinh_pnl.Width;
+                }
+            }
+        }
     }
 }

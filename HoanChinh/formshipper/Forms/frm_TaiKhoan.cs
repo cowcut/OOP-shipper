@@ -26,5 +26,9 @@ namespace QuanLyShipper.formshipper.Forms
         {
 
         }
+
+        private void frm_TaiKhoan_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

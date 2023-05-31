@@ -1,6 +1,6 @@
 ﻿namespace QuanLyShipper.formshipper
 {
-    partial class Shipper
+    partial class frm_Shipper
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shipper));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Shipper));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btn_dangxuat = new System.Windows.Forms.Button();
@@ -46,7 +46,7 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.lbl_trangchu = new System.Windows.Forms.Label();
             this.pic_home = new System.Windows.Forms.PictureBox();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.ShipperChinh_pnl = new System.Windows.Forms.Panel();
             this.paneldesktop = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -58,7 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_home)).BeginInit();
-            this.panel9.SuspendLayout();
+            this.ShipperChinh_pnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.paneldesktop)).BeginInit();
             this.SuspendLayout();
             // 
@@ -190,11 +190,11 @@
             this.pic_home.Name = "pic_home";
             this.pic_home.TabStop = false;
             // 
-            // panel9
+            // ShipperChinh_pnl
             // 
-            this.panel9.Controls.Add(this.paneldesktop);
-            resources.ApplyResources(this.panel9, "panel9");
-            this.panel9.Name = "panel9";
+            this.ShipperChinh_pnl.Controls.Add(this.paneldesktop);
+            resources.ApplyResources(this.ShipperChinh_pnl, "ShipperChinh_pnl");
+            this.ShipperChinh_pnl.Name = "ShipperChinh_pnl";
             // 
             // paneldesktop
             // 
@@ -202,16 +202,17 @@
             resources.ApplyResources(this.paneldesktop, "paneldesktop");
             this.paneldesktop.Name = "paneldesktop";
             this.paneldesktop.TabStop = false;
+            this.paneldesktop.Resize += new System.EventHandler(this.paneldesktop_Resize);
             // 
-            // Shipper
+            // frm_Shipper
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(143)))), ((int)(((byte)(242)))));
-            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.ShipperChinh_pnl);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel1);
-            this.Name = "Shipper";
+            this.Name = "frm_Shipper";
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -223,7 +224,7 @@
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_home)).EndInit();
-            this.panel9.ResumeLayout(false);
+            this.ShipperChinh_pnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.paneldesktop)).EndInit();
             this.ResumeLayout(false);
 
@@ -247,7 +248,7 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label lbl_trangchu;
         private System.Windows.Forms.PictureBox pic_home;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel ShipperChinh_pnl;
         private System.Windows.Forms.PictureBox paneldesktop;
         private System.Windows.Forms.Button btn_exit;
     }
