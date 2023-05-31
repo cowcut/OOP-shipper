@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLShipperModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tbl_Account">
+    <Key>
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Name="AccountID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountTitle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tbl_Company">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyTitle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tbl_Shipper">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenSP" Type="nvarchar" MaxLength="50" />
+    <Property Name="CC" Type="nvarchar" MaxLength="50" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="50" />
+    <Property Name="SoTK" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="50" />
+    <Property Name="GioiTinh" Type="bit" />
+    <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="AccountID" Type="int" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'QLShipper.dbo.V_Shipper' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_Shipper">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="TenSP" Type="nvarchar" MaxLength="50" />
+    <Property Name="CC" Type="nvarchar" MaxLength="50" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="101" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="50" />
+    <Property Name="SoTK" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="50" />
+    <Property Name="GioiTinh" Type="varchar" MaxLength="3" />
+    <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="CompanyTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="AccountID" Type="int" Nullable="false" />
+    <Property Name="AccountTitle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="Account_FK">
+    <End Role="Tbl_Account" Type="Self.Tbl_Account" Multiplicity="0..1" />
+    <End Role="Tbl_Shipper" Type="Self.Tbl_Shipper" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Account">
+        <PropertyRef Name="AccountID" />
+      </Principal>
+      <Dependent Role="Tbl_Shipper">
+        <PropertyRef Name="AccountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Company_FK">
+    <End Role="Tbl_Company" Type="Self.Tbl_Company" Multiplicity="0..1" />
+    <End Role="Tbl_Shipper" Type="Self.Tbl_Shipper" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Company">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Tbl_Shipper">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="SP_ShipperDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_ShipperInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TenSP" Type="nvarchar" Mode="In" />
+    <Parameter Name="CC" Type="nvarchar" Mode="In" />
+    <Parameter Name="SDT" Type="nvarchar" Mode="In" />
+    <Parameter Name="SoTK" Type="nvarchar" Mode="In" />
+    <Parameter Name="DiaChi" Type="nvarchar" Mode="In" />
+    <Parameter Name="GioiTinh" Type="bit" Mode="In" />
+    <Parameter Name="TinhTrang" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="AccountID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_ShipperSearch" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SearchName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SP_ShipperUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="TenSP" Type="nvarchar" Mode="In" />
+    <Parameter Name="CC" Type="nvarchar" Mode="In" />
+    <Parameter Name="SDT" Type="nvarchar" Mode="In" />
+    <Parameter Name="SoTK" Type="nvarchar" Mode="In" />
+    <Parameter Name="DiaChi" Type="nvarchar" Mode="In" />
+    <Parameter Name="GioiTinh" Type="bit" Mode="In" />
+    <Parameter Name="TinhTrang" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="AccountID" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="QLShipperModelStoreContainer">
+    <EntitySet Name="Tbl_Account" EntityType="Self.Tbl_Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Company" EntityType="Self.Tbl_Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Shipper" EntityType="Self.Tbl_Shipper" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="V_Shipper" EntityType="Self.V_Shipper" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_Shipper].[Id] AS [Id], 
+    [V_Shipper].[TenSP] AS [TenSP], 
+    [V_Shipper].[CC] AS [CC], 
+    [V_Shipper].[FullName] AS [FullName], 
+    [V_Shipper].[SDT] AS [SDT], 
+    [V_Shipper].[SoTK] AS [SoTK], 
+    [V_Shipper].[DiaChi] AS [DiaChi], 
+    [V_Shipper].[GioiTinh] AS [GioiTinh], 
+    [V_Shipper].[TinhTrang] AS [TinhTrang], 
+    [V_Shipper].[UserName] AS [UserName], 
+    [V_Shipper].[CompanyID] AS [CompanyID], 
+    [V_Shipper].[CompanyTitle] AS [CompanyTitle], 
+    [V_Shipper].[AccountID] AS [AccountID], 
+    [V_Shipper].[AccountTitle] AS [AccountTitle]
+    FROM [dbo].[V_Shipper] AS [V_Shipper]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="Account_FK" Association="Self.Account_FK">
+      <End Role="Tbl_Account" EntitySet="Tbl_Account" />
+      <End Role="Tbl_Shipper" EntitySet="Tbl_Shipper" />
+    </AssociationSet>
+    <AssociationSet Name="Company_FK" Association="Self.Company_FK">
+      <End Role="Tbl_Company" EntitySet="Tbl_Company" />
+      <End Role="Tbl_Shipper" EntitySet="Tbl_Shipper" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

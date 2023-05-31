@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLShipperModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tbl_Account">
+    <Key>
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Name="AccountID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tbl_Shipper" Relationship="Self.Account_FK" FromRole="Tbl_Account" ToRole="Tbl_Shipper" />
+  </EntityType>
+  <EntityType Name="Tbl_Company">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tbl_Shipper" Relationship="Self.Company_FK" FromRole="Tbl_Company" ToRole="Tbl_Shipper" />
+  </EntityType>
+  <EntityType Name="Tbl_Shipper">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SoTK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GioiTinh" Type="Boolean" />
+    <Property Name="TinhTrang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyID" Type="Int32" />
+    <Property Name="AccountID" Type="Int32" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tbl_Account" Relationship="Self.Account_FK" FromRole="Tbl_Shipper" ToRole="Tbl_Account" />
+    <NavigationProperty Name="Tbl_Company" Relationship="Self.Company_FK" FromRole="Tbl_Shipper" ToRole="Tbl_Company" />
+  </EntityType>
+  <EntityType Name="V_Shipper">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="TenSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FullName" Type="String" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SoTK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GioiTinh" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="TinhTrang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AccountID" Type="Int32" Nullable="false" />
+    <Property Name="AccountTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="Account_FK">
+    <End Role="Tbl_Account" Type="Self.Tbl_Account" Multiplicity="0..1" />
+    <End Role="Tbl_Shipper" Type="Self.Tbl_Shipper" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Account">
+        <PropertyRef Name="AccountID" />
+      </Principal>
+      <Dependent Role="Tbl_Shipper">
+        <PropertyRef Name="AccountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Company_FK">
+    <End Role="Tbl_Company" Type="Self.Tbl_Company" Multiplicity="0..1" />
+    <End Role="Tbl_Shipper" Type="Self.Tbl_Shipper" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Company">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Tbl_Shipper">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLShipperEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tbl_Account" EntityType="Self.Tbl_Account" />
+    <EntitySet Name="Tbl_Company" EntityType="Self.Tbl_Company" />
+    <EntitySet Name="Tbl_Shipper" EntityType="Self.Tbl_Shipper" />
+    <EntitySet Name="V_Shipper" EntityType="Self.V_Shipper" />
+    <AssociationSet Name="Account_FK" Association="Self.Account_FK">
+      <End Role="Tbl_Account" EntitySet="Tbl_Account" />
+      <End Role="Tbl_Shipper" EntitySet="Tbl_Shipper" />
+    </AssociationSet>
+    <AssociationSet Name="Company_FK" Association="Self.Company_FK">
+      <End Role="Tbl_Company" EntitySet="Tbl_Company" />
+      <End Role="Tbl_Shipper" EntitySet="Tbl_Shipper" />
+    </AssociationSet>
+    <FunctionImport Name="SP_ShipperDelete">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ShipperInsert">
+      <Parameter Name="TenSP" Mode="In" Type="String" />
+      <Parameter Name="CC" Mode="In" Type="String" />
+      <Parameter Name="SDT" Mode="In" Type="String" />
+      <Parameter Name="SoTK" Mode="In" Type="String" />
+      <Parameter Name="DiaChi" Mode="In" Type="String" />
+      <Parameter Name="GioiTinh" Mode="In" Type="Boolean" />
+      <Parameter Name="TinhTrang" Mode="In" Type="String" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="CompanyID" Mode="In" Type="Int32" />
+      <Parameter Name="AccountID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ShipperSearch" ReturnType="Collection(QLShipperModel.SP_ShipperSearch_Result)">
+      <Parameter Name="SearchName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ShipperUpdate">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="TenSP" Mode="In" Type="String" />
+      <Parameter Name="CC" Mode="In" Type="String" />
+      <Parameter Name="SDT" Mode="In" Type="String" />
+      <Parameter Name="SoTK" Mode="In" Type="String" />
+      <Parameter Name="DiaChi" Mode="In" Type="String" />
+      <Parameter Name="GioiTinh" Mode="In" Type="Boolean" />
+      <Parameter Name="TinhTrang" Mode="In" Type="String" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="CompanyID" Mode="In" Type="Int32" />
+      <Parameter Name="AccountID" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="SP_ShipperSearch_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="TenSP" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CC" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="101" />
+    <Property Type="String" Name="SDT" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="SoTK" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DiaChi" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="GioiTinh" Nullable="true" MaxLength="3" />
+    <Property Type="String" Name="TinhTrang" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="CompanyTitle" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="AccountID" Nullable="false" />
+    <Property Type="String" Name="AccountTitle" Nullable="true" MaxLength="50" />
+  </ComplexType>
+</Schema>
