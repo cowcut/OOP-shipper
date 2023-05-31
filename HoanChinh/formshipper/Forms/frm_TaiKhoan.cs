@@ -19,12 +19,17 @@ namespace QuanLyShipper.formshipper.Forms
 
         private void btn_nhandon_Click(object sender, EventArgs e)
         {
-
+            frm_doiMK d = new frm_doiMK();
+            d.ShowDialog();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void frm_TaiKhoan_Load(object sender, EventArgs e)
+        {
         }
     }
 }
