@@ -68,6 +68,12 @@
       <DependentUpon>QuanLy.cs</DependentUpon>
     </Compile>
     <Compile Include="formquanly\ThemeColor.cs" />
+    <Compile Include="formshipper\Forms\frm_doiMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formshipper\Forms\frm_doiMK.Designer.cs">
+      <DependentUpon>frm_doiMK.cs</DependentUpon>
+    </Compile>
     <Compile Include="formshipper\Shipper.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formquanly\QuanLy.resx">
       <DependentUpon>QuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formshipper\Forms\frm_doiMK.resx">
+      <DependentUpon>frm_doiMK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formshipper\Forms\frm_DonHang.resx">
       <DependentUpon>frm_DonHang.cs</DependentUpon>
