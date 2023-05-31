@@ -17,7 +17,10 @@ namespace QuanLyShipper
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new frm_HeyYou());
+=======
+>>>>>>> 4eb9ad3087f618d7da2ca4a60cf153dce90d5860
         }
     }
 }
