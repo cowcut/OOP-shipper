@@ -75,8 +75,8 @@ namespace QuanLyShipper
                         string csdl = "insert into Shipper(MaSP, TaiKhoanSP, MatKhauSP) values(@MaSP, @TaiKhoanSP, @MatKhauSP)";
                         string MaSP = TaoMaMoi("SP");
                         command.Parameters.AddWithValue("@MaSP", MaSP);
-                        command.Parameters.AddWithValue("@TaiKhoanSP", DangKyTK_txt.Text);
-                        command.Parameters.AddWithValue("@MatKhauSP", DangKyMK_txt.Text);
+                        command.Parameters.AddWithValue("@TaiKhoanSP", DangKyTK_txt.Texts);
+                        command.Parameters.AddWithValue("@MatKhauSP", DangKyMK_txt.Texts);
                         command.Connection = connection;
                         command.CommandText = csdl;
                     }
@@ -85,8 +85,8 @@ namespace QuanLyShipper
                         string csdl = "insert into KhachHang(MaKH, TaiKhoanKH, MatKhauKH) values(@MaKH, @TaiKhoanKH, @MatKhauKH)";
                         string MaKH = TaoMaMoi("KH");
                         command.Parameters.AddWithValue("@MaKH", MaKH);
-                        command.Parameters.AddWithValue("@TaiKhoanKH", DangKyTK_txt.Text);
-                        command.Parameters.AddWithValue("@MatKhauKH", DangKyMK_txt.Text);
+                        command.Parameters.AddWithValue("@TaiKhoanKH", DangKyTK_txt.Texts);
+                        command.Parameters.AddWithValue("@MatKhauKH", DangKyMK_txt.Texts);
                         command.Connection = connection;
                         command.CommandText = csdl;
                     }
