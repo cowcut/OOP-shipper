@@ -73,3 +73,4 @@ INSERT INTO DonHang VALUES ('DH07', 'Cơm rang', '456 Đường XYZ', '2023-05-2
 INSERT INTO DonHang VALUES ('DH08', 'Bánh mỳ', '789 Đường DEF', '2023-05-28', 'Chưa hoàn thành', '20000', 'SP03', 'KH08', 'QL01', N'Đồ ăn');
 INSERT INTO DonHang VALUES ('DH09', 'Pizza', '111 Đường GHI', '2023-05-27', 'Đã hoàn thành', '100000', 'SP04', 'KH09', 'QL02', N'Đồ ăn');
 INSERT INTO DonHang VALUES ('DH10', 'Sushi', '222 Đường JKL', '2023-05-26', 'Đã hoàn thành', '150000', 'SP05', 'KH10', 'QL01', N'Đồ ăn');
+
