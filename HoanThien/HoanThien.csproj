@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2475A128-82A2-48E4-9D32-02646AE65528}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HoanThien</RootNamespace>
+    <AssemblyName>HoanThien</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=2.1.7.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.Core.2.1.7\lib\net472\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=2.1.7.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WinForms.2.1.7\lib\net472\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsPresentation, Version=2.1.7.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WinPresentation.2.1.7\lib\net472\GMap.NET.WindowsPresentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.8.0.0-preview.4.23259.5\lib\net462\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.8.0.0-preview.4.23259.5\lib\net462\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.8.0.0-preview.4.23259.5\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.3\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.115.5\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.115.5\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKy.Designer.cs">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildCustomer\flogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildCustomer\flogin.Designer.cs">
+      <DependentUpon>flogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildCustomer\thongtincanhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildCustomer\thongtincanhan.Designer.cs">
+      <DependentUpon>thongtincanhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildCustomer\HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildCustomer\HoaDon.Designer.cs">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildCustomer\FormCd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildCustomer\FormCd.Designer.cs">
+      <DependentUpon>FormCd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildCustomer\FormKh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildCustomer\FormKh.Designer.cs">
+      <DependentUpon>FormKh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildCustomer\FormCthd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildCustomer\FormCthd.Designer.cs">
+      <DependentUpon>FormCthd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildCustomer\FormHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildCustomer\FormHD.Designer.cs">
+      <DependentUpon>FormHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildShipper\frm_doiMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildShipper\frm_doiMK.Designer.cs">
+      <DependentUpon>frm_doiMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildShipper\frm_TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildShipper\frm_TaiKhoan.Designer.cs">
+      <DependentUpon>frm_TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildShipper\frm_ThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildShipper\frm_ThongBao.Designer.cs">
+      <DependentUpon>frm_ThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildShipper\frm_VanChuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildShipper\frm_VanChuyen.Designer.cs">
+      <DependentUpon>frm_VanChuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildShipper\frm_DonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildShipper\frm_DonHang.Designer.cs">
+      <DependentUpon>frm_DonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKhachHang.Designer.cs">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShipper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShipper.Designer.cs">
+      <DependentUpon>FormShipper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildAdmin\Context\DbConnectBang.cs" />
+    <Compile Include="FormChildAdmin\Context\QLHang.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLHang.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildAdmin\Context\QLHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildAdmin\Context\QLHang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLHang.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildAdmin\Context\QLMatHang.cs">
+      <DependentUpon>QLHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildAdmin\Context\SP_Retrieve_User_Result.cs">
+      <DependentUpon>QLHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildAdmin\FormCaiDat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildAdmin\FormCaiDat.Designer.cs">
+      <DependentUpon>FormCaiDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildAdmin\FormDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildAdmin\FormDashboard.Designer.cs">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildAdmin\FormPBShipper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildAdmin\FormPBShipper.Designer.cs">
+      <DependentUpon>FormPBShipper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildAdmin\FormQLShipper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildAdmin\FormQLShipper.Designer.cs">
+      <DependentUpon>FormQLShipper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildAdmin\FormThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildAdmin\FormThongBao.Designer.cs">
+      <DependentUpon>FormThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildAdmin\Models\BangDK.cs" />
+    <Compile Include="frm_HeyYou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_HeyYou.Designer.cs">
+      <DependentUpon>frm_HeyYou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RJControls\RJButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RJControls\RJButton.Designer.cs">
+      <DependentUpon>RJButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RJControls\RJComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RJControls\RJLogin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RJControls\RJPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RJControls\RJToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sqlketnoi.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="DangKy.resx">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildAdmin\FormCaiDat.resx">
+      <DependentUpon>FormCaiDat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildAdmin\FormDashboard.resx">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildAdmin\FormQLShipper.resx">
+      <DependentUpon>FormQLShipper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildAdmin\FormThongBao.resx">
+      <DependentUpon>FormThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildCustomer\FormKh.resx">
+      <DependentUpon>FormKh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKhachHang.resx">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShipper.resx">
+      <DependentUpon>FormShipper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RJControls\RJButton.resx">
+      <DependentUpon>RJButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RJControls\RJComboBox.resx">
+      <DependentUpon>RJComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="FormChildAdmin\Context\QLHang.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLHang.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="FormChildAdmin\Context\QLHang.edmx.diagram">
+      <DependentUpon>QLHang.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RJControls\.editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="FormChildAdmin\Context\QLHang.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>QLHang.Context.cs</LastGenOutput>
+      <DependentUpon>QLHang.edmx</DependentUpon>
+    </Content>
+    <Content Include="FormChildAdmin\Context\QLHang.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLHang.edmx</DependentUpon>
+      <LastGenOutput>QLHang.cs</LastGenOutput>
+    </Content>
+    <Content Include="Resources\ava.png" />
+    <Content Include="Resources\bando1.jpg" />
+    <Content Include="Resources\banner.png" />
+    <Content Include="Resources\Brown and Yellow Minimalist Home Sweet Home Delivery Facebook Cover %282%29.png" />
+    <Content Include="Resources\CaiDat.png" />
+    <None Include="Resources\crop[1].png" />
+    <None Include="Resources\cross[1].png" />
+    <Content Include="Resources\Dangxuat.png" />
+    <Content Include="Resources\dashboard.png" />
+    <Content Include="Resources\exit_formchild.png" />
+    <None Include="Resources\group 1 %281%29.png" />
+    <None Include="Resources\Group 1 %281%291.png" />
+    <None Include="Resources\HeYou-removebg-preview.png" />
+    <Content Include="Resources\home.png" />
+    <None Include="Resources\istockphoto-1304375217-640x640.jpg" />
+    <Content Include="Resources\LG.png" />
+    <None Include="Resources\OK.png" />
+    <Content Include="Resources\PBSP.png" />
+    <Content Include="Resources\PhanBo.png" />
+    <Content Include="Resources\phanbo1.png" />
+    <Content Include="Resources\QLSP.png" />
+    <Content Include="Resources\QuanLy.jpg" />
+    <None Include="Resources\remove2[1].png" />
+    <Content Include="Resources\setting.jpg" />
+    <Content Include="Resources\ThongBao.png" />
+    <Content Include="Resources\ThongBao1.png" />
+    <Content Include="Resources\v.png" />
+    <None Include="Resources\z4400015596827_25497d217777882b305147c632b32738.jpg" />
+    <None Include="Resources\z4400015600247_a0ea6a504e71a26e8c8b9fb85714419e.jpg" />
+    <None Include="Resources\z4400015602985_11605472adfad121d614e288541b4c2f.jpg" />
+    <None Include="Resources\z4400015606789_2c0c5c9e831dd574b3230d7c8b64bf8c.jpg" />
+    <None Include="Resources\z4400015610796_015a54ab1641a16df96741f52f9e2c93.jpg" />
+    <None Include="Resources\z4400015613589_2c331ea92c39e93d478d20c79deebd56.jpg" />
+    <None Include="Resources\z4400015613728_d3b7ba3851aee53b2d1372f42bb8ba91.jpg" />
+    <None Include="Resources\z4400015628854_5328ba17450c19ef4279babd2815a4a8.jpg" />
+    <None Include="Resources\z4400015631736_04667a7889c627cbc061a05ef07885af.jpg" />
+    <None Include="Resources\z4400015634651_f95f54029708c825e2935af4b2418661.jpg" />
+    <None Include="Resources\z4400015639114_cbc5bcb3906a471df72f7406192a81db.jpg" />
+    <None Include="Resources\z4333280915783_61e3bf91437d6767fa6f70c85832537e_%281%29[1].jpg" />
+    <Content Include="Resources\Đơnhàng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+</Project>
